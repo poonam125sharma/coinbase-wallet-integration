@@ -1,0 +1,31 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    font-size: 16px;
+}
+
+body {
+    background: #000;
+    color: #fff;
+}
+
+.btn:focus {
+    box-shadow: none;
+}
+
+hr {
+    border-color: #5e5959;
+}
+
+.center-wrapper {
+    background: #2f2e2e;
+    padding: 1rem;
+    border-radius: 8px;
+    color: #fff;
+}

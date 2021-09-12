@@ -1,5 +1,8 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "cli": {
+    "analytics": "ab46015f-9602-4dbb-a79c-21b025d74757"
+  },
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
@@ -21,12 +24,24 @@
             "aot": true,
             "assets": [
               "src/favicon.ico",
+              "src/favicon.png",
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/assets/plugins/font-awesome-4.7.0/css/font-awesome.min.css",
+              "src/assets/plugins/bootstrap-4.6.0/css/bootstrap.min.css",
+              "src/assets/css/style.css"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/jquery/dist/jquery.min.js",
+              "src/assets/plugins/bootstrap-4.6.0/js/bootstrap.min.js",
+              "src/assets/plugins/web3modal/index.js"
+            ],
+            "allowedCommonJsDependencies": [
+              "walletlink",
+              "web3",
+              "hash.js"
+            ]
           },
           "configurations": {
             "production": {
